@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;700&display=swap");
+
+body {
+  width: 1440px;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Baloo Bhai 2";
+}
+
+menu {
+  position: absolute;
+  width: 90px;
+  height: 850px;
+  background: #000;
+  border-radius: 20px;
+  margin-left: 33px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.logo,
+.menu-buttons {
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: -40px;
+  margin-top: 16px;
+}
+
+.logo {
+  height: 102px;
+  font-weight: 700;
+  font-size: 76px;
+}
+
+.home,
+.education,
+.profile,
+.message,
+.setting {
+  margin-top: 45px;
+}
+
+.home {
+  content: url("img/home.svg");
+}
+
+.education {
+  content: url("img/edu.svg");
+}
+.profile {
+  content: url("img/profile.svg");
+}
+.message {
+  content: url("img/message.svg");
+}
+.setting {
+  content: url("img/settings.svg");
+}
+.logout {
+  content: url("img/logout.svg");
+}
+
+.logout {
+  margin-top: 295px;
+}

@@ -6,26 +6,37 @@ body {
   padding: 0px;
   font-family: "Baloo Bhai 2";
 }
-
-menu {
+.container {
+  margin-top: 25px;
+  margin-left: 35px;
   position: absolute;
-  width: 90px;
+  background-color: aqua;
+}
+
+.menu,
+.wrapper {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/*<---------------- start menu ---------------->*/
+
+.menu {
+  width: 130px;
   height: 850px;
   background: #000;
   border-radius: 20px;
-  margin-left: 33px;
+  /*margin-left: 33px;
   margin-top: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 25px;*/
 }
 
 .logo,
 .menu-buttons {
   color: #fff;
-
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: -40px;
   margin-top: 16px;
 }
 
@@ -34,6 +45,8 @@ menu {
   font-weight: 700;
   font-size: 76px;
 }
+
+/*<---------------- start menu btn ---------------->*/
 
 .home,
 .education,
@@ -61,8 +74,57 @@ menu {
 }
 .logout {
   content: url("img/logout.svg");
-}
-
-.logout {
   margin-top: 295px;
 }
+/*<---------------- end menu btn---------------->*/
+/*<---------------- end menu ---------------->*/
+
+/*<---------------- start content ---------------->*/
+.wrapper {
+  margin-top: 36px;
+  width: 620px;
+  /*margin-right: 70px;*/
+  margin-left: 70px;
+}
+
+.container-hello,
+.container-courses {
+  background: #f5f5f7;
+  border-radius: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.container-hello > .text > h3,
+.container-hello > .text > h1 {
+  margin: 0px;
+  padding: 0px;
+}
+
+.text,
+.img {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.text {
+  width: 305px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+}
+
+.img {
+  height: 191px;
+  width: 175px;
+  content: " ";
+  background-image: url(img/avatar.png);
+  background-repeat: no-repeat;
+  padding: 0px;
+  margin-top: -36px;
+}
+
+.container-courses {
+  padding-top: 45px;
+  padding-bottom: 40px;
+}
+/*<---------------- end content ---------------->*/

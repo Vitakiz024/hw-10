@@ -1,11 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;700&display=swap");
 
-body {
+html {
   width: 1440px;
   margin: 0px;
   padding: 0px;
   font-family: "Baloo Bhai 2";
 }
+
+li {
+  list-style-type: none;
+}
+
 .container {
   margin-top: 25px;
   margin-left: 35px;
@@ -17,6 +22,11 @@ body {
 .wrapper {
   display: inline-block;
   vertical-align: top;
+}
+
+img {
+  width: 32px;
+  height: 32px;
 }
 
 /*<---------------- start menu ---------------->*/
@@ -86,10 +96,10 @@ body {
 /*<---------------- start hello ---------------->*/
 
 .container-hello,
-.container-course {
+.container-course,
+.item-course {
   background: #f5f5f7;
   border-radius: 10px;
-  padding-left: 30px;
 }
 
 p,
@@ -103,6 +113,10 @@ h3 {
 .avatar {
   vertical-align: top;
   display: inline-block;
+}
+
+.container-hello {
+  padding-left: 30px;
 }
 
 .container-hello > .text > p {
@@ -130,15 +144,11 @@ h3 {
 .logo-course,
 .course-descr,
 .progress,
-.btn {
+.btn,
+.fire,
+.time {
   display: inline-block;
   vertical-align: middle;
-}
-
-.logo-course,
-.progress {
-  max-width: 64px;
-  max-height: 64px;
 }
 
 .container-course,
@@ -165,24 +175,25 @@ h3 {
 }
 
 .logo-course {
-  content: url(img/logo_course.svg);
   padding: 16px;
   background-color: #ffffff;
   border-radius: 15px;
+  max-width: 33px;
+  max-height: 33px;
 }
 
 .course-descr {
   margin: 0px;
   padding: 0px;
-}
-
-.course-descr {
   margin-left: 24px;
+  width: 180px;
 }
 
 .progress {
   content: url(img/progress.png);
-  margin-left: 40px;
+  margin-left: 25px;
+  max-width: 42px;
+  max-height: 42px;
 }
 
 .btn {
@@ -190,7 +201,7 @@ h3 {
   width: 100px;
   background-color: #000;
   border-radius: 5px;
-  margin-left: 30px;
+  margin-left: 20px;
   color: #fff;
   font-weight: 700;
 }
@@ -203,5 +214,73 @@ h3 {
   content: url(img/arrow-forward.png);
 }
 /*<---------------- end course ---------------->*/
+/*<---------------- start menu courses ---------------->*/
+
+.courses {
+  margin-top: 40px;
+}
+.category {
+  margin-top: 16px;
+}
+
+.category-item {
+  display: inline;
+  margin-left: 30px;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.category-item:first-child {
+  margin-left: 0px;
+}
+
+.active-cat {
+  color: rgba(0, 0, 0, 1);
+}
+
+.item-course {
+  padding-top: 8px;
+  padding-left: 8px;
+  padding-bottom: 8px;
+  margin-right: 17px;
+  width: 613px;
+}
+
+.box {
+  margin-top: 15px;
+}
+
+.box:first-child {
+  margin-top: 10px;
+}
+
+.time,
+.fire {
+  width: 90px;
+  height: 30px;
+  margin-left: 35px;
+}
+
+.fire {
+  width: auto;
+}
+
+.time::before,
+.fire::before {
+  width: 20px;
+  height: 30px;
+  margin-right: 4px;
+}
+
+.time::before {
+  content: url(img/clock.svg);
+}
+
+.fire::before {
+  content: url(img/clock.svg);
+}
+
+/*<---------------- end menu courses ---------------->*/
 
 /*<---------------- end content ---------------->*/

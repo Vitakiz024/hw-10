@@ -5,10 +5,16 @@ html {
   margin: 0px;
   padding: 0px;
   font-family: "Baloo Bhai 2";
+  margin-left: auto;
+  margin-right: auto;
 }
 
 li {
   list-style-type: none;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .container {
@@ -19,7 +25,8 @@ li {
 }
 
 .menu,
-.wrapper {
+.wrapper,
+.wrapper2 {
   display: inline-block;
   vertical-align: top;
 }
@@ -87,10 +94,15 @@ img {
 /*<---------------- end menu ---------------->*/
 
 /*<---------------- start content ---------------->*/
-.wrapper {
+.wrapper,
+.wrapper2 {
   margin-top: 36px;
   width: 620px;
   margin-left: 70px;
+}
+
+.wrapper2 {
+  width: 440px;
 }
 
 /*<---------------- start hello ---------------->*/
@@ -282,5 +294,180 @@ h3 {
 }
 
 /*<---------------- end menu courses ---------------->*/
+/*<---------------- start wrapper 2 ---------------->*/
+.search-box,
+.search-input {
+  background-color: #f5f5f7;
+  display: inline-block;
+}
+
+.search-box,
+.bell,
+.foto {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.search-box img,
+.search-input {
+  vertical-align: middle;
+}
+
+.search-box {
+  width: 284px;
+  height: 40px;
+  border-radius: 5px;
+  padding-left: 16px;
+}
+
+.search-box img {
+  width: 20px;
+  height: 20px;
+}
+
+.search-input {
+  border-style: none;
+  background-color: #f5f5f7;
+  height: 37px;
+  width: 250px;
+}
+
+.search-input:focus-visible {
+  outline: none;
+}
+
+.bell {
+  margin-left: 25px;
+}
+
+.bell img {
+  vertical-align: bottom;
+}
+
+.bell span {
+  border-radius: 10px;
+  vertical-align: top;
+  background-color: #f45b5b;
+  border: #fff 1px solid;
+  font-size: 10px;
+  margin-left: -15px;
+  margin-top: -6px;
+  height: 10px;
+  width: 10px;
+  display: inline-block;
+  padding-top: 1px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: 1px;
+  font-family: Roboto;
+  color: #fff;
+}
+
+.foto {
+  margin-left: 15px;
+}
+
+.foto img {
+  vertical-align: middle;
+}
+
+.foto::after,
+.drop-down::after {
+  content: url(img/open.svg);
+  margin-left: 5px;
+  width: 10px;
+  height: 5px;
+  vertical-align: middle;
+}
+
+.course-statistic {
+  margin-top: 26px;
+}
+
+.box208 {
+  width: 172px;
+  background-color: #f5f5f7;
+  border-radius: 5px;
+  padding-left: 36px;
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.box208 p,
+.number {
+  display: inline-block;
+}
+
+.box208 p {
+  width: 95px;
+  margin-left: 5px;
+}
+
+.number {
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.your-statistic {
+  margin-top: 40px;
+}
+
+.your-statistic .category {
+  width: 345px;
+  display: inline-block;
+}
+
+.drop-down {
+  background-color: #f5f5f7;
+  width: 88px;
+  height: 32px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 5px;
+}
+
+.graph {
+  margin-top: 30px;
+  width: 480px;
+  height: 267px;
+}
+
+.premium-banner {
+  margin-top: 50px;
+  background-color: #f5f5f7;
+  border-radius: 15px;
+}
+
+.inline-block {
+  width: 200px;
+  margin-left: 20px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.premium-banner img {
+  display: inline-block;
+  width: 125px;
+  height: 125px;
+  margin-left: 55px;
+}
+
+.premium-banner h1 {
+  font-size: 24px;
+}
+
+.premium-banner h3 {
+  font-size: 16px;
+}
+
+#go-premium {
+  background-color: #000;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 5px;
+}
+/*<---------------- end  wrapper 2 ---------------->*/
 
 /*<---------------- end content ---------------->*/

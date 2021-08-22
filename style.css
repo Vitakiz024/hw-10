@@ -20,8 +20,8 @@ li {
 .container {
   margin-top: 25px;
   margin-left: 35px;
-  position: absolute;
-  background-color: aqua;
+  /*position: absolute;
+  background-color: aqua;*/
 }
 
 .menu,
